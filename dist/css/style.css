@@ -567,6 +567,10 @@ h6 {
   background-color: var(--white, #FFFFFF);
 }
 
+.slider-arrow::after {
+  content: none;
+}
+
 .slider-arrow svg {
   min-width: calc(24 * var(--width-multiplier));
   width: calc(24 * var(--width-multiplier));

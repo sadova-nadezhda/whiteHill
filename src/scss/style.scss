@@ -69,6 +69,9 @@
     height: calc(64 * var(--width-multiplier));
     border-radius: calc(4 * var(--width-multiplier));
     background-color: var(--white, $white);
+    &::after {
+      content: none;
+    }
     svg {
       min-width: calc(24 * var(--width-multiplier));
       width: calc(24 * var(--width-multiplier));
