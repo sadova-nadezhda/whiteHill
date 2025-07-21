@@ -788,6 +788,54 @@ h6 {
   max-width: calc(770 * var(--width-multiplier));
 }
 
+.widjet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(48 * var(--width-multiplier));
+  padding: calc(10 * var(--width-multiplier));
+  background: var(--dark-1, #0D0D0D);
+  transition: background 0.3s ease-in-out;
+}
+
+.widjet__box {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 9;
+}
+
+.widjet-wp {
+  border-radius: calc(4 * var(--width-multiplier)) 0px 0px 0px;
+  border-bottom: 1px solid rgba(229, 229, 229, 0.28);
+}
+
+.widjet-tel {
+  border-radius: 0px 0px 0px calc(4 * var(--width-multiplier));
+}
+
+.widjet svg {
+  min-width: calc(24 * var(--width-multiplier));
+  width: calc(24 * var(--width-multiplier));
+  height: calc(24 * var(--width-multiplier));
+  pointer-events: none;
+}
+
+.widjet path {
+  transition: fill 0.3s ease-in-out;
+}
+
+.widjet:hover {
+  background: var(--gold, linear-gradient(277.39deg, #E4CB89 28.21%, #FFEBB7 57.26%));
+}
+
+.widjet:hover path {
+  fill: var(--dark-1, #0D0D0D);
+}
+
 .hero {
   position: relative;
 }
