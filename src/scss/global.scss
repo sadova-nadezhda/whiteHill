@@ -35,6 +35,14 @@ html {
   scroll-padding-top: calc(100 * var(--width-multiplier));
 }
 
+:-webkit-scrollbar {
+  width: 4px;
+}
+
+html::-webkit-scrollbar {
+  width: 0px;
+}
+
 *,
 *::before,
 *::after {

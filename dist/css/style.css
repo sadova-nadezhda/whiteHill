@@ -129,6 +129,14 @@ html {
   scroll-padding-top: calc(100 * var(--width-multiplier));
 }
 
+:-webkit-scrollbar {
+  width: 4px;
+}
+
+html::-webkit-scrollbar {
+  width: 0px;
+}
+
 *,
 *::before,
 *::after {
@@ -1211,6 +1219,9 @@ h6 {
   display: flex;
   flex-direction: column;
   gap: calc(8 * var(--width-multiplier));
+  height: calc(805 * var(--width-multiplier));
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .infrastructure__card {
@@ -1779,6 +1790,11 @@ h6 {
 
   .infrastructure__map {
     height: calc(400 * var(--width-multiplier));
+  }
+
+  .infrastructure__aside {
+    height: auto;
+    overflow: hidden;
   }
 
   .contacts__map img {
