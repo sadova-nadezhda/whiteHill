@@ -1,11 +1,15 @@
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   padding-top: calc(32 * var(--width-multiplier));
   z-index: 9;
-  @include transition;
+  transition: all 1.2s ease, background-color 0.3s ease, padding 0.3s ease !important;
+  &.scroll {
+    padding-top: 0;
+    background-color: var(--back, $back);
+  }
   &__container {
     padding: calc(24 * var(--width-multiplier));
     border-radius: calc(12 * var(--width-multiplier));

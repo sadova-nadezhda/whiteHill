@@ -1,4 +1,9 @@
+const toggleClass = (element, className, condition) => {
+  condition ? element.classList.add(className) : element.classList.remove(className);
+};
+
 window.addEventListener("load", function () {
+  const header = document.querySelector("header");
   let link = document.querySelector(".header__burger");
   let menu = document.querySelector(".header__nav");
   if (menu) {
@@ -27,6 +32,13 @@ window.addEventListener("load", function () {
       }
     });
   }
+
+  // Обработчик скролла
+  const handleScroll = () => {
+    toggleClass(header, "scroll", window.scrollY > 0);
+  };
+
+  handleScroll();
 
   // Fancybox
 
@@ -132,4 +144,8 @@ window.addEventListener("load", function () {
       })
     })
   }
+
+  window.addEventListener("scroll", () => {
+    handleScroll();
+  });
 });
