@@ -1,13 +1,9 @@
 .footer {
     a {
-    background: linear-gradient(277.39deg, #FFFFFF 28.21%, #FFFFFF 57.26%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.3s ease-in-out;
+    color: #FFFFFF;
+    transition: color 0.3s ease-in-out;
     &:hover {
-      background: linear-gradient(277.39deg, rgba(228, 203, 137, 1) 28.21%, rgba(255, 235, 183, 1) 57.26%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: rgba(241, 220, 169, 1);
     }
   }
   &__row {
