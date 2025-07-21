@@ -1195,6 +1195,7 @@ h6 {
   grid-template-columns: 1fr calc(318 * var(--width-multiplier));
   align-items: stretch;
   gap: calc(16 * var(--width-multiplier));
+  height: calc(805 * var(--width-multiplier));
   margin-bottom: calc(100 * var(--width-multiplier));
 }
 
@@ -1219,7 +1220,6 @@ h6 {
   display: flex;
   flex-direction: column;
   gap: calc(8 * var(--width-multiplier));
-  height: calc(805 * var(--width-multiplier));
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -1785,6 +1785,7 @@ h6 {
 
   .infrastructure__wrap {
     grid-template-columns: 1fr;
+    height: auto;
     margin-bottom: calc(60 * var(--width-multiplier));
   }
 
@@ -1793,7 +1794,6 @@ h6 {
   }
 
   .infrastructure__aside {
-    height: auto;
     overflow: hidden;
   }
 

@@ -850,12 +850,14 @@
     grid-template-columns: 1fr calc(318 * var(--width-multiplier));
     align-items: stretch;
     gap: calc(16 * var(--width-multiplier));
+    height: calc(805 * var(--width-multiplier));
     margin-bottom: calc(100 * var(--width-multiplier));
     @media (max-width: 1024px) {
       margin-bottom: calc(80 * var(--width-multiplier));
     }
     @media (max-width: 767px) {
       grid-template-columns: 1fr;
+      height: auto;
       margin-bottom: calc(60 * var(--width-multiplier));
     }
   }
@@ -879,11 +881,9 @@
     display: flex;
     flex-direction: column;
     gap: calc(8 * var(--width-multiplier));
-    height: calc(805 * var(--width-multiplier));
     overflow-x: hidden;
     overflow-y: auto;
     @media (max-width: 767px) {
-      height: auto;
       overflow: hidden;
     }
   }
