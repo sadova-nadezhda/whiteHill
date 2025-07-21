@@ -87,14 +87,20 @@ window.addEventListener("load", function () {
 
   // Swipers
 
-  var mainSwiper = new Swiper(".mainSwiper", {
-    navigation: {
-      nextEl: ".slider-next",
-      prevEl: ".slider-prev",
-    },
-    pagination: {
-      el: ".slider-pagination",
-    },
+  document.querySelectorAll('.mainSwiper').forEach((slider, index) => {
+    new Swiper(slider, {
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false
+      },
+      navigation: {
+        nextEl: slider.closest('.slider')?.querySelector('.slider-next'),
+        prevEl: slider.closest('.slider')?.querySelector('.slider-prev'),
+      },
+      pagination: {
+        el: slider.closest('.slider')?.querySelector('.slider-pagination'),
+      },
+    });
   });
 
   // Modals
@@ -115,7 +121,6 @@ window.addEventListener("load", function () {
       }
     });
   }
-
   function showModal(modal) {
     modal.style.display = "flex";
     setTimeout(() => {
@@ -144,6 +149,8 @@ window.addEventListener("load", function () {
       })
     })
   }
+
+  // Scroll
 
   window.addEventListener("scroll", () => {
     handleScroll();

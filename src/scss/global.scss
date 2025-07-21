@@ -190,6 +190,10 @@ label {
   }
 }
 
+.button-wrap {
+  width: 100%;
+}
+
 
 h1, h2 {
   font: 600 calc(42 * var(--width-multiplier))/1.2 Inter;

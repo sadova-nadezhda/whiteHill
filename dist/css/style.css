@@ -282,6 +282,10 @@ label {
   width: 100%;
 }
 
+.button-wrap {
+  width: 100%;
+}
+
 h1,
 h2 {
   font: 600 calc(42 * var(--width-multiplier))/1.2 Inter;
@@ -712,6 +716,10 @@ h6 {
   background-color: rgb(23, 23, 23);
 }
 
+.modal__close:hover {
+  cursor: pointer;
+}
+
 .modal form {
   display: flex;
   flex-direction: column;
@@ -927,10 +935,19 @@ h6 {
   border-radius: calc(8 * var(--width-multiplier));
   background-color: var(--dark-1, #0D0D0D);
   font: 700 calc(24 * var(--width-multiplier))/1.2 Inter;
+  transition: color 0.3s ease;
 }
 
 .layouts-card.hidden {
   display: none;
+}
+
+.layouts-card:hover {
+  cursor: pointer;
+}
+
+.layouts-card:hover .layouts-card__caption {
+  color: rgb(228, 203, 137);
 }
 
 .feedback {
@@ -1148,6 +1165,11 @@ h6 {
   border-radius: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.commerce__button:hover {
+  transform: scale(0.8);
 }
 
 .commerce .feedback__wrap {
