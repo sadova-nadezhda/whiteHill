@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { "title": "White Hill" })
+  <body>
+    @@include('html/header.html')
+
+    <main>
+      <section id="hero" class="hero section-hidden">
+        <img class="back" src="@img/hero-img.png" alt="Main image">
+        <div class="container">
+          <div class="hero__container">
+            <div class="hero__logo" data-aos="fade-up">
+              <svg width="265" height="198" viewBox="0 0 265 198" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M180.418 71.974L108.474 179.935H156.436L144.445 197.928H168.427L216.391 125.954L204.4 107.961L168.427 161.942H144.445L192.409 89.9671L180.418 71.974ZM180.418 73.9258L191.108 89.9671L143.545 161.341L142.424 163.024H144.445H168.427H169.006L169.327 162.541L204.4 109.912L215.09 125.954L167.848 196.845H146.468L157.337 180.535L158.459 178.852H156.436H110.495L180.418 73.9258Z" fill="#F1DCA9"/>
+                <path d="M228.383 143.948L192.41 197.928H264.356L228.383 143.948ZM228.383 145.9L262.333 196.846H194.433L228.383 145.9Z" fill="#F1DCA9"/>
+                <path d="M36.5294 179.935L108.474 71.9739H132.456L60.5112 179.935H36.5294ZM168.429 53.9808H96.483L0.55658 197.928H72.5022L168.429 53.9808ZM34.508 181.017H36.5294H60.5112H61.0902L61.4116 180.535L133.356 72.5747L134.478 70.8913H132.456H108.474H107.895L107.574 71.3731L35.6291 179.334L34.508 181.017ZM166.406 55.0634L71.9222 196.845H2.57905L97.063 55.0634H166.406Z" fill="#F1DCA9"/>
+                <path d="M108.474 35.9873H156.436L132.455 2.28882e-05L108.474 35.9873Z" fill="#F1DCA9"/>
+              </svg>
+              <svg width="757" height="70" viewBox="0 0 757 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M90.4801 3.2725V4.02163C89.1567 4.28686 87.9804 4.78049 86.9513 5.50039C85.9211 6.22029 84.9072 7.41434 83.9073 9.07389C82.9074 10.7367 81.8632 13.1432 80.7757 16.2913L62.5561 69.9999H61.8938L45.3071 16.2913H45.0864L27.0421 69.9999H26.3809L7.8962 10.7746C7.21988 8.68634 6.41154 7.16969 5.4701 6.22895C4.52974 5.28713 3.66945 4.7058 2.89033 4.48388C2.11121 4.26412 1.14704 4.10931 0 4.02163V3.2725H20.1609V4.02163C18.396 4.13854 17.065 4.67007 16.1679 5.60973C15.2708 6.55263 14.8228 7.71421 14.8228 9.09663C14.8228 10.1554 15.0728 11.4793 15.5727 13.0696L29.2929 56.9811H29.4693L44.2034 13.0696L43.5855 11.082C42.9968 9.17024 42.1149 7.54641 40.9397 6.2073C39.7624 4.8671 37.9249 4.13854 35.4252 4.02163V3.2725H56.203V4.02163C53.8504 4.05086 52.3268 4.65492 51.6364 5.83057C50.946 7.00838 50.6008 8.09635 50.6008 9.09663C50.6008 10.3621 50.8216 11.685 51.262 13.0696L64.8047 56.9811H64.9822L78.79 16.2913C79.2012 15.2033 79.5767 13.9226 79.9154 12.4504C80.253 10.9813 80.4218 9.72884 80.4218 8.69933C80.4218 6.69878 79.9879 5.44843 79.12 4.94829C78.2522 4.44815 76.8487 4.13854 74.9073 4.02163V3.2725H90.4801Z" fill="#F1DCA9"/>
+                <path d="M172.42 33.0162V11.2591C172.42 9.14162 171.846 7.4052 170.699 6.05202C169.552 4.69883 167.773 4.02115 165.361 4.02115V3.27203H186.051V4.02115C183.639 4.02115 181.875 4.69017 180.757 6.02928C179.639 7.3684 179.081 9.11239 179.081 11.2591V60.4221C179.081 65.1896 181.404 67.5723 186.051 67.5723V68.2792H165.361V67.5723C167.566 67.5723 169.294 66.978 170.544 65.7861C171.795 64.5931 172.42 62.8362 172.42 60.5119V35.0038H135.186V60.4221C135.186 62.6879 135.827 64.447 137.106 65.6963C138.385 66.9488 140.098 67.5723 142.245 67.5723V68.2792H121.555V67.5723C123.789 67.5723 125.503 66.9488 126.695 65.6963C127.885 64.447 128.481 62.6879 128.481 60.4221V11.2591C128.481 6.43307 126.172 4.02115 121.555 4.02115V3.27203H142.245V4.02115C139.803 4.02115 138.016 4.69017 136.885 6.02928C135.752 7.3684 135.186 9.11239 135.186 11.2591V33.0162H172.42Z" fill="#F1DCA9"/>
+                <path d="M240.067 3.27245V4.02158C238.124 4.02158 236.477 4.56719 235.126 5.65515C233.772 6.74311 233.096 8.55314 233.096 11.082V60.4225C233.096 62.9243 233.816 64.7408 235.258 65.8742C236.698 67.0066 238.302 67.5728 240.067 67.5728V68.2797H219.464V67.5728C221.346 67.5728 222.971 67.0207 224.339 65.9186C225.706 64.8155 226.391 62.9827 226.391 60.4225V11.082C226.391 8.37669 225.706 6.52335 224.339 5.52308C222.971 4.52172 221.346 4.02158 219.464 4.02158V3.27245H240.067Z" fill="#F1DCA9"/>
+                <path d="M329.195 15.9369H328.489C328.166 11.7008 326.93 8.95765 324.784 7.7073C322.636 6.45587 319.989 5.83015 316.843 5.83015H303.917V60.4221C303.917 65.0446 306.269 67.4262 310.975 67.5724V68.2793H290.285V67.5724C292.227 67.5139 293.866 66.9488 295.205 65.8739C296.542 64.8 297.212 62.9824 297.212 60.4221V5.83015H284.286C281.139 5.83015 278.5 6.45587 276.367 7.7073C274.234 8.95765 272.993 11.7008 272.639 15.9369H271.934V0.0482483H272.639C273.11 0.784386 273.522 1.32999 273.874 1.68182C274.228 2.03581 274.683 2.33676 275.242 2.58791C275.8 2.8369 276.456 3.01444 277.206 3.11728C277.956 3.22121 278.845 3.27209 279.874 3.27209H321.96C324.754 3.27209 326.93 2.1982 328.489 0.0482483H329.195V15.9369Z" fill="#F1DCA9"/>
+                <path d="M361.023 4.02181V3.27268H399.755V13.5093H399.139C399.139 8.03807 395.492 5.3003 388.197 5.3003H374.655V34.8269H386.566C388.918 34.8269 391.021 34.4458 392.874 33.6783C394.727 32.9129 395.785 31.1635 396.05 28.4258H396.713V43.1679H396.05C395.785 41.49 395.285 40.2039 394.55 39.3043C393.815 38.4101 393.087 37.8126 392.367 37.5192C391.645 37.2247 391.007 37.0775 390.448 37.0775C389.39 36.9 388.286 36.8123 387.139 36.8123H374.655V59.8934C374.655 61.6298 374.986 63.1302 375.647 64.3957C376.308 65.6612 377.846 66.2934 380.257 66.2934H389.919C392.241 66.2934 394.153 65.9546 395.653 65.2769C397.153 64.6025 398.337 63.6596 399.205 62.4525C400.071 61.2476 400.8 59.7927 401.388 58.0844H402.006L399.755 68.2788H361.023V67.573H361.905C363.287 67.573 364.641 67.0144 365.963 65.8961C367.288 64.7768 367.95 62.9537 367.95 60.4227V11.4362C367.95 9.43565 367.5 7.69924 366.604 6.22913C365.706 4.75795 364.141 4.02181 361.905 4.02181H361.023Z" fill="#F1DCA9"/>
+                <path d="M542.192 33.0163V11.2592C542.192 9.14168 541.619 7.40527 540.472 6.05208C539.324 4.69889 537.545 4.02121 535.133 4.02121V3.27209H555.823V4.02121C553.411 4.02121 551.647 4.69023 550.529 6.02934C549.412 7.36846 548.853 9.11245 548.853 11.2592V60.4221C548.853 65.1897 551.177 67.5724 555.823 67.5724V68.2793H535.133V67.5724C537.338 67.5724 539.067 66.9781 540.318 65.7862C541.567 64.5932 542.192 62.8362 542.192 60.512V35.0038H504.958V60.4221C504.958 62.6879 505.599 64.4471 506.878 65.6963C508.157 66.9488 509.87 67.5724 512.017 67.5724V68.2793H491.327V67.5724C493.561 67.5724 495.275 66.9488 496.467 65.6963C497.658 64.4471 498.253 62.6879 498.253 60.4221V11.2592C498.253 6.43314 495.944 4.02121 491.327 4.02121V3.27209H512.017V4.02121C509.576 4.02121 507.789 4.69023 506.657 6.02934C505.524 7.36846 504.958 9.11245 504.958 11.2592V33.0163H542.192Z" fill="#F1DCA9"/>
+                <path d="M609.842 3.27245V4.02158C607.899 4.02158 606.252 4.56719 604.9 5.65515C603.547 6.74311 602.871 8.55314 602.871 11.082V60.4225C602.871 62.9243 603.591 64.7408 605.033 65.8742C606.473 67.0066 608.077 67.5728 609.842 67.5728V68.2797H589.239V67.5728C591.121 67.5728 592.746 67.0207 594.114 65.9186C595.481 64.8155 596.166 62.9827 596.166 60.4225V11.082C596.166 8.37669 595.481 6.52335 594.114 5.52308C592.746 4.52172 591.121 4.02158 589.239 4.02158V3.27245H609.842Z" fill="#F1DCA9"/>
+                <path d="M643.606 67.5723H644.488C646.076 67.5723 647.481 66.9488 648.7 65.6963C649.921 64.447 650.532 62.6879 650.532 60.4221V11.3468C650.532 8.6404 649.847 6.75893 648.481 5.69802C647.113 4.63821 645.487 4.07961 643.606 4.02115V3.27203H664.384V4.02115C662.56 4.07961 660.943 4.62522 659.531 5.65472C658.12 6.68423 657.414 8.58302 657.414 11.3468V58.7918C657.414 61.6161 658.12 63.5723 659.531 64.6603C660.943 65.7482 663.251 66.2938 666.458 66.2938H672.061C674.5 66.2938 676.449 65.9994 677.905 65.4094C679.361 64.8216 680.514 63.9241 681.368 62.7171C682.222 61.5122 683.09 59.805 683.971 57.5977H684.721L682.25 68.2792H643.606V67.5723Z" fill="#F1DCA9"/>
+                <path d="M715.885 67.5723H716.767C718.356 67.5723 719.761 66.9488 720.98 65.6963C722.201 64.447 722.812 62.6879 722.812 60.4221V11.3468C722.812 8.6404 722.127 6.75893 720.76 5.69802C719.393 4.63821 717.767 4.07961 715.885 4.02115V3.27203H736.664V4.02115C734.84 4.07961 733.223 4.62522 731.811 5.65472C730.4 6.68423 729.694 8.58302 729.694 11.3468V58.7918C729.694 61.6161 730.4 63.5723 731.811 64.6603C733.223 65.7482 735.531 66.2938 738.738 66.2938H744.341C746.78 66.2938 748.729 65.9994 750.185 65.4094C751.641 64.8216 752.794 63.9241 753.648 62.7171C754.501 61.5122 755.369 59.805 756.251 57.5977H757.001L754.53 68.2792H715.885V67.5723Z" fill="#F1DCA9"/>
+              </svg>
+            </div>
+            <div class="hero__wrap">
+              <div class="hero__plate" data-aos="fade-up">Сдача — IV квартал 2026 года</div>
+              <div class="hero__desc" data-aos="fade-up">
+                <p>Жилой комплекс WHITE HILL — это новое слово в жилой архитектуре Актобе.</p>
+                <p>Созданный по стандартам бизнес-класса, проект сочетает в себе современные строительные технологии, продуманные планировочные решения и высокий уровень комфорта.</p>
+              </div>
+              <a class="button button-light button-full modal-btn" data-type="feedback" data-aos="fade-up">Получить бесплатную консультацию</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about section-pad section-hidden">
+        <div class="container">
+          <div class="about__container">
+            <div class="about__subtitle subtitle" data-aos="fade-up">О проекте</div>
+            <h2 class="about__title" data-aos="fade-up">Жилой комплекс WHITE HILL — это новое слово в жилой архитектуре Актобе.Созданный по стандартам бизнес-класса, проект сочетает в себе современные строительные технологии, продуманные планировочные решения и высокий уровень комфорта.</h2>
+            <div class="about__slider slider">
+                <div class="swiper mainSwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="@img/img-1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="@img/img-1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="@img/img-1.png" alt=""></div>
+                  </div>
+                  <div class="slider-arrow slider-next swiper-button-next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 19V5L19 12L8 19Z" fill="black"/>
+                    </svg>
+                  </div>
+                  <div class="slider-arrow slider-prev swiper-button-prev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 19V5L5 12L16 19Z" fill="black"/>
+                    </svg>
+                  </div>
+                  <div class="slider-pagination swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="about__cards">
+              <div class="about__card about-card" data-aos="fade-up">
+                <div class="about-card__icon"><img src="@img/icon-1.svg" alt=""></div>
+                <div class="about-card__txt">Современные фасады, шумоизоляция, долговечная отделка</div>
+              </div>
+              <div class="about__card about-card" data-aos="fade-up">
+                <div class="about-card__icon"><img src="@img/icon-2.svg" alt=""></div>
+                <div class="about-card__txt">Контроль света, климата и безопасности</div>
+              </div>
+              <div class="about__card about-card" data-aos="fade-up">
+                <div class="about-card__icon"><img src="@img/icon-3.svg" alt=""></div>
+                <div class="about-card__txt">Безопасность на всей территории и в подъездах</div>
+              </div>
+              <div class="about__card about-card" data-aos="fade-up">
+                <div class="about-card__icon"><img src="@img/icon-4.svg" alt=""></div>
+                <div class="about-card__txt">Подземный паркинг с лифтом</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="layouts" class="layouts section-pad-bottom section-hidden">
+        <div class="container">
+          <div class="layouts__container">
+            <div class="layouts__subtitle subtitle" data-aos="fade-up">Планировки бизнес-класса</div>
+            <h2 class="layouts__title" data-aos="fade-up">Рациональные решения, премиальные метражи и ощущение свободы в каждом формате.</h2>
+            <div class="layouts__cards">
+              <a class="layouts__card layouts-card modal-btn" data-type="layouts" data-aos="fade-up">
+                <div class="layouts-card__img"><img src="@img/layouts-1.png" alt=""></div>
+                <div class="layouts-card__caption">3-комнатная | 112 м²</div>
+              </a>
+              <a class="layouts__card layouts-card modal-btn" data-type="layouts" data-aos="fade-up">
+                <div class="layouts-card__img"><img src="@img/layouts-1.png" alt=""></div>
+                <div class="layouts-card__caption">3-комнатная | 112 м²</div>
+              </a>
+              <a class="layouts__card layouts-card modal-btn" data-type="layouts" data-aos="fade-up">
+                <div class="layouts-card__img"><img src="@img/layouts-1.png" alt=""></div>
+                <div class="layouts-card__caption">3-комнатная | 112 м²</div>
+              </a>
+              <a class="layouts__card layouts-card modal-btn" data-type="layouts" data-aos="fade-up">
+                <div class="layouts-card__img"><img src="@img/layouts-1.png" alt=""></div>
+                <div class="layouts-card__caption">3-комнатная | 112 м²</div>
+              </a>
+              <a class="layouts__card layouts-card modal-btn" data-type="layouts" data-aos="fade-up">
+                <div class="layouts-card__img"><img src="@img/layouts-1.png" alt=""></div>
+                <div class="layouts-card__caption">3-комнатная | 112 м²</div>
+              </a>
+              <a class="layouts__card layouts-card modal-btn" data-type="layouts" data-aos="fade-up">
+                <div class="layouts-card__img"><img src="@img/layouts-1.png" alt=""></div>
+                <div class="layouts-card__caption">3-комнатная | 112 м²</div>
+              </a>
+              <a class="layouts__card layouts-card modal-btn hidden" data-type="layouts" data-aos="fade-up">
+                <div class="layouts-card__img"><img src="@img/layouts-1.png" alt=""></div>
+                <div class="layouts-card__caption">3-комнатная | 112 м²</div>
+              </a>
+              <a class="layouts__card layouts-card modal-btn hidden" data-type="layouts" data-aos="fade-up">
+                <div class="layouts-card__img"><img src="@img/layouts-1.png" alt=""></div>
+                <div class="layouts-card__caption">3-комнатная | 112 м²</div>
+              </a>
+            </div>
+            <a class="layouts__button button button-dark button-full show">Показать больше</a>
+          </div>
+        </div>
+      </section>
+      <section id="feedback" class="feedback section-hidden">
+        <img class="back" src="@img/img-2.png" alt="">
+        <div class="feedback__wrap" data-aos="fade-up">
+          <div class="container">
+            <div class="feedback__container">
+              <div class="feedback__form form">
+                <div class="feedback__caption">Заполните форму и получите консультацию</div>
+                <form action="">
+                  <div class="form__group">
+                    <label for="name">Ваше имя*</label>
+                    <input type="text" name="name" id="name" placeholder="[Введите ваше имя]">
+                  </div>
+                  <div class="form__group">
+                    <label for="phone">Номер телефона*</label>
+                    <input type="tel" name="phone" id="phone" placeholder="[Введите ваш номер телефона]">
+                  </div>
+                  <button class="form__button button button-light">Отправить заявку</button>
+                </form>
+              </div>
+              <div class="feedback__box">
+                <span>Полная презентация жилого комплекса</span>
+                <div class="feedback__caption">Всё, что нужно знать — в одном документе</div>
+                <a class="feedback__button button button-light">Скачать презентацию</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="interior" class="interior section-pad section-hidden">
+        <div class="container">
+          <div class="interior__container">
+            <div class="interior__subtitle subtitle" data-aos="fade-up">Пространство, где всё имеет значение</div>
+            <h2 class="interior__title" data-aos="fade-up">Холлы оформлены по индивидуальному дизайнерскому проекту с применением натуральных материалов Лифты «Xizi Gots»: бесшумные, скоростные, безопасные.</h2>
+            <ul data-tabs="interior" class="tabs">
+              <li><a data-tabby-default href="#interior-1">Интерьер</a></li>
+              <li><a href="#interior-2">Экстерьер</a></li>
+              <li><a href="#interior-3">Двор</a></li>
+            </ul>
+            <div id="interior-1" class="interior__content slider">
+              <div class="swiper mainSwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="@img/interior.png" alt="">
+                      <!-- выводить если есть -->
+                      <div class="interior__desc">
+                        <p>Светлые пространства, потолки от 3 м и продуманные планировки.</p>
+                        <p>Отделка в спокойной палитре, без визуального шума.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="@img/interior.png" alt="">
+                      <div class="interior__desc">
+                        <p>Светлые пространства, потолки от 3 м и продуманные планировки.</p>
+                        <p>Отделка в спокойной палитре, без визуального шума.</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="@img/interior.png" alt="">
+                      <div class="interior__desc">
+                        <p>Светлые пространства, потолки от 3 м и продуманные планировки.</p>
+                        <p>Отделка в спокойной палитре, без визуального шума.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-arrow slider-next swiper-button-next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 19V5L19 12L8 19Z" fill="black"/>
+                    </svg>
+                  </div>
+                  <div class="slider-arrow slider-prev swiper-button-prev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 19V5L5 12L16 19Z" fill="black"/>
+                    </svg>
+                  </div>
+                  <div class="slider-pagination swiper-pagination"></div>
+                </div>
+            </div>
+            <div id="interior-2" class="interior__content slider">
+              <div class="swiper mainSwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="@img/img-1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="@img/img-1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="@img/img-1.png" alt=""></div>
+                  </div>
+                  <div class="slider-arrow slider-next swiper-button-next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 19V5L19 12L8 19Z" fill="black"/>
+                    </svg>
+                  </div>
+                  <div class="slider-arrow slider-prev swiper-button-prev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 19V5L5 12L16 19Z" fill="black"/>
+                    </svg>
+                  </div>
+                  <div class="slider-pagination swiper-pagination"></div>
+                </div>
+            </div>
+            <div id="interior-3" class="interior__content slider">
+              <div class="swiper mainSwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="@img/img-1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="@img/img-1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="@img/img-1.png" alt=""></div>
+                  </div>
+                  <div class="slider-arrow slider-next swiper-button-next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 19V5L19 12L8 19Z" fill="black"/>
+                    </svg>
+                  </div>
+                  <div class="slider-arrow slider-prev swiper-button-prev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 19V5L5 12L16 19Z" fill="black"/>
+                    </svg>
+                  </div>
+                  <div class="slider-pagination swiper-pagination"></div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="spaces" class="spaces section-pad-bottom section-hidden">
+        <div class="container">
+          <div class="spaces__container">
+            <div class="spaces__subtitle subtitle" data-aos="fade-up">Пространства для энергии и движения</div>
+            <h2 class="spaces__title" data-aos="fade-up">WHITE HILL предлагает полноценную инфраструктуру для жизни и отдыха. Детские площадки от BUHLO для разных возрастов, современная workout-зона, футбольное поле, беседки и chill-зоны — всё это делает внутреннюю территорию живой и насыщенной.</h2>
+            <div class="spaces__gallery">
+              <a class="spaces__img" href="@img/gallery-1.png" data-fancybox="gallery" data-aos="fade-up"><img src="@img/gallery-1.png" alt=""></a>
+              <a class="spaces__img" href="@img/gallery-2.png" data-fancybox="gallery" data-aos="fade-up"><img src="@img/gallery-2.png" alt=""></a>
+              <a class="spaces__img video" href="https://youtu.be/krDWc30PAGg?si=O1tCZyZmmO6ucjbv" data-fancybox="video" data-aos="fade-up"><img src="@img/gallery-3.png" alt=""></a>
+              <a class="spaces__img" href="@img/gallery-4.png" data-fancybox="gallery" data-aos="fade-up"><img src="@img/gallery-4.png" alt=""></a>
+              <a class="spaces__img" href="@img/gallery-5.png" data-fancybox="gallery" data-aos="fade-up"><img src="@img/gallery-5.png" alt=""></a>
+              <a class="spaces__img video" href="https://youtu.be/krDWc30PAGg?si=O1tCZyZmmO6ucjbv" data-fancybox="video" data-aos="fade-up"><img src="@img/gallery-6.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="parking" class="parking section-pad-bottom section-hidden">
+        <div class="container">
+          <div class="parking__container">
+            <div class="parking__subtitle subtitle" data-aos="fade-up">Комфорт не заканчивается за порогом квартиры</div>
+            <h2 class="parking__title" data-aos="fade-up">Наземный тёплый паркинг с прямым доступом к лифту и кладовые на -1 уровне позволяют жить без компромиссов в быту.</h2>
+            <ul data-tabs="parking" class="tabs">
+              <li><a data-tabby-default href="#parking-1">Парковка</a></li>
+              <li><a href="#parking-2">Кладовая</a></li>
+            </ul>
+            <div id="parking-1" class="parking__content slider">
+              <div class="swiper mainSwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="@img/parking.png" alt=""></div>
+                    <div class="swiper-slide"><img src="@img/parking.png" alt=""></div>
+                    <div class="swiper-slide"><img src="@img/parking.png" alt=""></div>
+                  </div>
+                  <div class="slider-arrow slider-next swiper-button-next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 19V5L19 12L8 19Z" fill="black"/>
+                    </svg>
+                  </div>
+                  <div class="slider-arrow slider-prev swiper-button-prev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 19V5L5 12L16 19Z" fill="black"/>
+                    </svg>
+                  </div>
+                  <div class="slider-pagination swiper-pagination"></div>
+                </div>
+            </div>
+            <div id="parking-2" class="parking__content slider">
+              <div class="swiper mainSwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="@img/img-1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="@img/img-1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="@img/img-1.png" alt=""></div>
+                  </div>
+                  <div class="slider-arrow slider-next swiper-button-next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 19V5L19 12L8 19Z" fill="black"/>
+                    </svg>
+                  </div>
+                  <div class="slider-arrow slider-prev swiper-button-prev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 19V5L5 12L16 19Z" fill="black"/>
+                    </svg>
+                  </div>
+                  <div class="slider-pagination swiper-pagination"></div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="commerce" class="commerce section-hidden">
+        <div class="container">
+          <div class="commerce__container">
+            <div class="commerce__subtitle subtitle" data-aos="fade-up">Коммерция, достойная архитектуры</div>
+            <h2 class="commerce__title" data-aos="fade-up">Коммерческие помещения на первом этаже с потолками 5 и 6,5 м и витражными окнами — отличное решение для бизнеса, кафе, магазинов и офисов.</h2>
+            <div class="commerce__img" data-aos="fade-up">
+              <img src="@img/img-3.png" alt="">
+              <a href="#layouts" class="commerce__button">Показать планировки помещений</a>
+            </div>
+          </div>
+        </div>
+        <div class="feedback__wrap" data-aos="fade-up">
+          <div class="container">
+            <div class="feedback__container">
+              <div class="feedback__form form">
+                <div class="feedback__caption">Заполните форму и получите консультацию</div>
+                <form action="">
+                  <div class="form__group">
+                    <label for="name">Ваше имя*</label>
+                    <input type="text" name="name" id="name" placeholder="[Введите ваше имя]">
+                  </div>
+                  <div class="form__group">
+                    <label for="phone">Номер телефона*</label>
+                    <input type="tel" name="phone" id="phone" placeholder="[Введите ваш номер телефона]">
+                  </div>
+                  <button class="form__button button button-light">Отправить заявку</button>
+                </form>
+              </div>
+              <div class="feedback__box">
+                <span>Полная презентация жилого комплекса</span>
+                <div class="feedback__caption">Всё, что нужно знать — в одном документе</div>
+                <a class="feedback__button button button-light">Скачать презентацию</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="infrastructure" class="infrastructure section-pad section-hidden">
+        <div class="container">
+          <div class="infrastructure__container">
+            <div class="infrastructure__subtitle subtitle" data-aos="fade-up">Локация</div>
+            <h2 class="infrastructure__title" data-aos="fade-up">Комплекс расположен по адресу ул. Ораза Татеулы — в районе с развитой инфраструктурой и удобной транспортной доступностью.</h2>
+            <div class="infrastructure__wrap">
+              <div class="infrastructure__map" data-aos="fade-up"><img src="@img/map-1.png" alt=""></div>
+              <div class="infrastructure__aside" data-aos="fade-up">
+                <div class="infrastructure__card">
+                  <div class="infrastructure__time">
+                    <div class="infrastructure__icon"><img src="@img/man.svg" alt=""></div>
+                    <span>2 минут пешком</span>
+                  </div>
+                  <div class="infrastructure__caption">Детская площадка</div>
+                </div>
+                <div class="infrastructure__card">
+                  <div class="infrastructure__time">
+                    <div class="infrastructure__icon"><img src="@img/man.svg" alt=""></div>
+                    <span>7 минут пешком</span>
+                  </div>
+                  <div class="infrastructure__caption">Школа</div>
+                </div>
+                <div class="infrastructure__card">
+                  <div class="infrastructure__time">
+                    <div class="infrastructure__icon"><img src="@img/man.svg" alt=""></div>
+                    <span>10 минут пешком</span>
+                  </div>
+                  <div class="infrastructure__caption">Детский сад</div>
+                </div>
+                <div class="infrastructure__card">
+                  <div class="infrastructure__time">
+                    <div class="infrastructure__icon"><img src="@img/man.svg" alt=""></div>
+                    <span>2 минут пешком</span>
+                  </div>
+                  <div class="infrastructure__caption">Спортивная зона</div>
+                </div>
+                <div class="infrastructure__card">
+                  <div class="infrastructure__time">
+                    <div class="infrastructure__icon"><img src="@img/house.svg" alt=""></div>
+                    <span>В доме</span>
+                  </div>
+                  <div class="infrastructure__caption">Подземный паркинг</div>
+                </div>
+                <div class="infrastructure__card">
+                  <div class="infrastructure__time">
+                    <div class="infrastructure__icon"><img src="@img/man.svg" alt=""></div>
+                    <span>10 минут пешком</span>
+                  </div>
+                  <div class="infrastructure__caption">Прогулочные зоны и скверы</div>
+                </div>
+                <div class="infrastructure__card">
+                  <div class="infrastructure__time">
+                    <div class="infrastructure__icon"><img src="@img/house.svg" alt=""></div>
+                    <span>В доме</span>
+                  </div>
+                  <div class="infrastructure__caption">Продуктовый магазин</div>
+                </div>
+              </div>
+            </div>
+            <div class="infrastructure__slider slider">
+                <div class="swiper mainSwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="@img/infrastructure.png" alt=""></div>
+                    <div class="swiper-slide"><img src="@img/infrastructure.png" alt=""></div>
+                    <div class="swiper-slide"><img src="@img/infrastructure.png" alt=""></div>
+                  </div>
+                  <div class="slider-arrow slider-next swiper-button-next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 19V5L19 12L8 19Z" fill="black"/>
+                    </svg>
+                  </div>
+                  <div class="slider-arrow slider-prev swiper-button-prev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 19V5L5 12L16 19Z" fill="black"/>
+                    </svg>
+                  </div>
+                  <div class="slider-pagination swiper-pagination"></div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contacts" class="contacts section-pad-bottom section-hidden">
+        <div class="container">
+          <div class="contacts__container">
+            <div class="infrastructure__subtitle subtitle" data-aos="fade-up">Свяжитесь с нами — мы на связи</div>
+            <h2 class="infrastructure__title" data-aos="fade-up">Ответим на все вопросы, покажем презентацию и пригласим на просмотр.</h2>
+            <div class="contacts__map" data-aos="fade-up">
+              <img src="@img/map-2.png" alt="">
+              <div class="contacts__cards">
+                <div class="contacts__card">
+                  <span>Адрес</span>
+                  <div>г. Актобе, ул. Сангина, 15</div>
+                </div>
+                <div class="contacts__card">
+                  <span>Телефон</span>
+                  <a href="tel:+7 (702) 111-80-70">+7 (702) 111-80-70</a>
+                </div>
+                <div class="contacts__card">
+                  <span>Время работы</span>
+                  <div>Пн–Сб: 10:00–19:00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('html/modals.html') 
+    @@include('html/footer.html') 
+    @@include('html/foot.html')
+  </body>
+</html>

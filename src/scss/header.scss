@@ -1,0 +1,105 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: calc(32 * var(--width-multiplier));
+  z-index: 9;
+  @include transition;
+  &__container {
+    padding: calc(24 * var(--width-multiplier));
+    border-radius: calc(12 * var(--width-multiplier));
+    background-color: var(--back, $back);
+    @media(max-width: 980px) {
+      width: max-content;
+      margin-left: auto;
+      padding: calc(16 * var(--width-multiplier));
+    }
+  }
+  &__nav {
+    @include transition;
+    &.open {
+      left: 0;
+    }
+    @media(max-width: 980px) {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      display: block;
+      min-height: 100vh;
+      padding: calc(32 * var(--width-multiplier));
+      border-radius: 0 calc(12 * var(--width-multiplier)) calc(12 * var(--width-multiplier)) 0;
+      background-color: var(--back, $back);
+    }
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: calc(16 * var(--width-multiplier));
+    width: 100%;
+    a {
+      transition: color 0.3s ease-in-out;
+      color: rgba(255, 255, 255, 0.5);
+      &.active {
+        color: var(--white, $white);
+      }
+      &:hover:not(.active) {
+        cursor: pointer;
+        color: var(--white, $white);
+      }
+    }
+    @media(max-width: 980px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 40px;
+    }
+  }
+  &__burger {
+    position: relative;
+    display: none;
+    width: 30px;
+    height: 20px;
+    margin-left: auto;
+    cursor: pointer;
+    @include transition;
+    span {
+      position: absolute;
+      right: 0;
+      display: block;
+      height: 2px;
+      width: 100%;
+      pointer-events: none;
+      background: var(--gold, $gold);
+      @include transition;
+      &:nth-child(1){
+        top: 0;
+      }
+      &:nth-child(2){
+        top: 50%;
+        transform: translateY(-50%);
+        width: 75%;
+      }
+      &:nth-child(3){
+        bottom: 0;
+        width: 50%;
+      }
+    }
+    &:hover {
+      span {
+        &:nth-child(2), &:nth-child(3){
+          width: 100%;
+        }
+      }
+    }
+    @media(max-width: 980px) {
+      display: block;
+    }
+  }
+  @media(max-width: 1024px) {
+    padding-top: calc(24 * var(--width-multiplier));
+  }
+  @media(max-width: 980px) {
+    position: fixed;
+  }
+}
