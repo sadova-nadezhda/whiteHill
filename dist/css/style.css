@@ -1326,6 +1326,42 @@ h6 {
   font-size: calc(18 * var(--width-multiplier));
 }
 
+.thanks {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.thanks__container {
+  display: flex;
+  flex-direction: column;
+  gap: calc(24 * var(--width-multiplier));
+  min-height: 100vh;
+  padding-top: calc(100 * var(--width-multiplier));
+}
+
+.thanks__box {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: calc(24 * var(--width-multiplier));
+  max-width: calc(390 * var(--width-multiplier));
+  margin: auto;
+  padding: calc(16 * var(--width-multiplier));
+  text-align: center;
+}
+
+.thanks__title {
+  font-size: calc(24 * var(--width-multiplier));
+}
+
+.thanks-logo {
+  width: 100vw;
+  height: auto;
+}
+
 @media (max-width: 1024px) {
   :root {
     --width-base: 768;
@@ -1481,6 +1517,10 @@ h6 {
 
   .contacts__map {
     height: calc(500 * var(--width-multiplier));
+  }
+
+  .thanks__container {
+    padding-top: calc(80 * var(--width-multiplier));
   }
 }
 
@@ -1768,6 +1808,10 @@ h6 {
     min-width: unset;
     width: 100%;
     padding: calc(16 * var(--width-multiplier));
+  }
+
+  .thanks__container {
+    padding-top: calc(60 * var(--width-multiplier));
   }
 }
 
